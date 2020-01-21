@@ -2,13 +2,13 @@ function FormatAndShowOutput(values, part) {
    switch (part) {
      case 1:
       document.getElementById('ConversionOutput').textContent =
-        Number(values[0]) + " in base " + Number(values[1]) + " is " +
-        Number(values[3]) + " in base " + Number(values[2]);
+        ""+values[0] + " in base " + Number(values[1]) + " is " +
+        values[3] + " in base " + Number(values[2]);
      break;
      case 2:
        document.getElementById('ConversionOutput').textContent =
-          values[2] + " has a binary rep of: " + values[0] +
-          " and a two's complement rep: " + values[1];
+          values[2] + " has a hex rep of: " + values[0] +
+          " and a two's complement hex rep: " + values[1];
        break;
      case 3:
         document.getElementById('ConversionOutput').textContent = values[0] +
